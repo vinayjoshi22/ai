@@ -18,8 +18,28 @@ mnist = Network.Network(layer_units,
                           y_test,
                           x_val,
                           y_val,
-                          learning_rate_set=None)
+                          lrSet=None)
 ```
+layer_units - list of number of units in each layer including input and output layers
+
+learning_rate - initial learning_rate
+
+epochs - number of epochs to train network with
+
+x_train - input for train set
+
+y_train - labels for train set
+
+x_test - input for test set
+
+y_test - labels for test set
+
+x_val - input for validation set
+
+y_val - labels for validation set
+
+lrSet - list of learning_rate values, should be same as number of epochs
+
 Train network - returns training progress of the network
 
 ```
